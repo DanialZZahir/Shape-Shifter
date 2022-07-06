@@ -7,6 +7,7 @@
 */
 
 function triangleHypotenuse (a, b) {
+  (a, b) == (3, 4)
   return sqrt(a^2 + b^2)
 }
 

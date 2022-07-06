@@ -7,8 +7,8 @@
 */
 
 function rectangleAreaFromCoords (points) {
-  [A,B,C,D] = points
-  return (A.x - B.x)*(C.y - D.y)
+ [{ x: 2, y: 3 }, { x: 2, y: 10 }, { x: 4, y: 3 }, { x: 4, y: 10 }] = points
+  return (Math.max(A.x, B.x, C.x, D.x) - Math.min(A.x, B.x, C.x, D.x))*(Math.max(A.y, B.y, C.y, D.y) - Math.min(A.y, B.y, C.y, D.y))
 }
 
 module.exports = rectangleAreaFromCoords
